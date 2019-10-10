@@ -1,5 +1,12 @@
 import 'bootstrap';
+import planetData from './helpers/data/planetData';
 
 import '../styles/main.scss';
 
-console.error('hi');
+
+const init = () => {
+  const planets = planetData.getPlanets();
+  console.error(planets);
+};
+
+init();
