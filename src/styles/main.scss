@@ -1,7 +1,9 @@
 @import "~bootstrap/scss/bootstrap";
 
 body {
-  background-color: blue;
+    background-image: url("http://www.fubiz.net/wp-content/uploads/2019/06/Nasa9.jpg");
+    background-position: center center;
+    background-repeat: repeat-x;
 }
 
 #planet-container {
