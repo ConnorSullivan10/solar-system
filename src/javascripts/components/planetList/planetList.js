@@ -6,7 +6,7 @@ const createPlanetList = (planetArr) => {
   for (let i = 0; i < planetArr.length; i += 1) {
     const planet = planetArr[i];
     domString += `
-      <div class="container" style="width:20rem; height:20rem;">
+      <div class="container planets ${planet.name}" style="width:20rem; height:20rem;">
         <div class="card" style="width: 20rem; height: 20rem;">
           <div class="card-body">
             <h4 class="text">${planet.name}</h4>
