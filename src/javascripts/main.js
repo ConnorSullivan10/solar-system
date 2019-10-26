@@ -7,6 +7,7 @@ import '../styles/main.scss';
 
 const init = () => {
   planetList.createPlanetList();
+  planetList.hoverFunc();
   bigPlanetCard.clickEvents();
   searchBar.searchFilter();
 };

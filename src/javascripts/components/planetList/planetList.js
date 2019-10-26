@@ -1,3 +1,4 @@
+import $ from 'jquery';
 import utilities from '../../helpers/utilities';
 import planets from '../../helpers/data/planetData';
 import './planetList.scss';
@@ -19,4 +20,16 @@ const createPlanetList = () => {
   utilities.printToDom('planet-container', domString);
 };
 
-export default { createPlanetList };
+const hoverFunc = () => {
+  $('.card-body').mouseenter((e) => {
+    const card = $(e.target.id);
+    card.find('.image').show();
+    card.find('.text').hide();
+  }); $('.card-body').mouseleave((e) => {
+    const card = $(e.target.id);
+    card.find('.image').hide();
+    card.find('.text').show();
+  });
+};
+
+export default { createPlanetList, hoverFunc };
