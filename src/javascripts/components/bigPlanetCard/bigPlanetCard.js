@@ -28,15 +28,12 @@ const bigPlanetCard = (singlePlanet) => {
 };
 
 const clickEvents = () => {
-  $('.planets').on('click', (event) => {
+  $('.card-body').on('click', (event) => {
     const singlePlanet = event.target.id;
     bigPlanetCard(singlePlanet);
     utilities.printToDom('planet-container', '');
   });
   console.log(clickEvents);
-  // $('body').on('click', '.planet-list', () => {
-  //   utilities.printToDom('planet-container', '');
-  //   bigPlanetCard();
 };
 // const closePlanetCard = () => {
 // const closeButtons = $('.close');

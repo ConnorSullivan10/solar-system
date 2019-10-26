@@ -18,17 +18,18 @@ const createPlanetList = () => {
       `;
   }
   utilities.printToDom('planet-container', domString);
+  $('.image').hide();
 };
 
 const hoverFunc = () => {
   $('.card-body').mouseenter((e) => {
-    const card = $(e.target.id);
-    card.find('.image').show();
-    card.find('.text').hide();
+    const singleCard = $(e.target);
+    singleCard.find('.image').show();
+    singleCard.find('.text').hide();
   }); $('.card-body').mouseleave((e) => {
-    const card = $(e.target.id);
-    card.find('.image').hide();
-    card.find('.text').show();
+    const singleCard = $(e.target);
+    singleCard.find('.image').hide();
+    singleCard.find('.text').show();
   });
 };
 

@@ -6,6 +6,7 @@
 .card-body {
   background-color: black;
   display: grid;
+  *{pointer-events: none;}
 
   img, h4{
     grid-column: 1;
@@ -17,7 +18,6 @@ img {
     width: 100%;
     height: 100%;
     text-align: center;
-    visibility: hidden;
   }
 
   h4 {
