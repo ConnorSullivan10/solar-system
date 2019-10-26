@@ -1,6 +1,7 @@
 import $ from 'jquery';
 import utilities from '../../helpers/utilities';
 import planetData from '../../helpers/data/planetData';
+import createPlanetList from '../planetList/planetList';
 import './bigPlanetCard.scss';
 
 
@@ -11,7 +12,7 @@ const bigPlanetCard = (singlePlanet) => {
     const name = planetList[i].name.toLowerCase();
     if (singlePlanet === `${planetList[i].name}`) {
       domString = `
-      <div class=" planet-bigCard ${name}">
+      <div class=" planet-bigCard text-center ${name}">
          <span class="pull-right clickable close" data-effect="fadeOut"><i class="fa fa-times"></i></span>
          <h2>${planetList[i].name}</h2>
          <img src="${planetList[i].imageUrl}"/>
@@ -24,7 +25,6 @@ const bigPlanetCard = (singlePlanet) => {
     }
   }
   utilities.printToDom('largePlanetCard', domString);
-  console.log(bigPlanetCard);
 };
 
 const clickEvents = () => {
@@ -33,7 +33,10 @@ const clickEvents = () => {
     bigPlanetCard(singlePlanet);
     utilities.printToDom('planet-container', '');
   });
-  console.log(clickEvents);
+  $('.close').on('click', (event) => {
+    const bigPlanetCloseButton = event.target;
+    createPlanetList.createPlanetList();
+  });
 };
 // const closePlanetCard = () => {
 // const closeButtons = $('.close');

@@ -1,13 +1,16 @@
 .planet-bigCard {
-  width: 30%;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  color: black;
-  background-color: white;
+  width: 50rem;
+  height: 80%;
+  color: white;
+  background-color: black;
   text-align: center;
   border-style: solid;
+  display: absolute;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 150px;
    img {
-    height: 200px;
-    width: 180px;
+    height: 20rem;
+    width: 20rem;
   }
 }
