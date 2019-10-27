@@ -9,11 +9,11 @@ const createPlanetList = () => {
   for (let i = 0; i < planetList.length; i += 1) {
     const name = planetList[i].name.toLowerCase();
     domString += `
-      <div class="col-4 planets ${name}" style="width:20rem; height:20rem;">
+      <div class="col-4 planets ${name} ${planetList[i].description}" style="width:20rem; height:20rem;">
         <div class="card-body planet-list" id="${planetList[i].name}" style="width: 20rem; height: 20rem;">
           <h4 class="text">${planetList[i].name}</h4>
           <img src="${planetList[i].imageUrl}" class="image">
-        </div>
+          </div>
       </div>
       `;
   }

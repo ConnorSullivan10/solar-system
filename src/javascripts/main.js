@@ -7,10 +7,10 @@ import '../styles/main.scss';
 
 const init = () => {
   planetList.createPlanetList();
-  searchBar.searchFilter();
   planetList.hoverFunc();
   bigPlanetCard.clickForBigCard();
   bigPlanetCard.closePlanetCard();
+  searchBar.searchFilter();
 };
 
 init();

@@ -13,7 +13,7 @@ const bigPlanetCard = (singlePlanet) => {
     if (singlePlanet === `${planetList[i].name}`) {
       domString = `
       <div class=" planet-bigCard text-center ${name}">
-         <button class="close d-flex justify-content-end">X</button>
+         <button class="close d-flex justify-content-end" style="color:red;">X</button>
          <h2>${planetList[i].name}</h2>
          <img src="${planetList[i].imageUrl}"/>
          <h5>Is it made of gas? = ${planetList[i].isGasPlanet}</h5>
@@ -43,14 +43,5 @@ const closePlanetCard = () => {
     clickForBigCard();
   });
 };
-// const closeButtons = $('.close');
-// for (let i = 0; i < closeButtons.length; i += 1) {
-// const currentButton = closeButtons[i];
-// currentButton.click.parent.remove();
-// currentButton.addEventListener('click', (event) => {
-//   event.target.parentElement.remove();
-// });
-// }
-// };
 
 export default { clickForBigCard, closePlanetCard };

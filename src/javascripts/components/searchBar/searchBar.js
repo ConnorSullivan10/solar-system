@@ -18,5 +18,4 @@ const searchFilter = () => $(document).ready(() => {
   });
 });
 
-
 export default { searchFilter };
