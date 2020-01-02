@@ -9,12 +9,12 @@
 ## Description & Screenshots
 Use this application to search for and print educational cards detailing each of the planets in our Solar System.
 
-![Solar System Preview](https://raw.githubusercontent.com/ConnorSullivan10/solar-system/master/screenshots/baseSolarSystemScreenshot.png)
+![Solar System Preview](https://raw.githubusercontent.com/ConnorSullivan10/solar-system/master/screenshots/baseSolarScreenshot.PNG)
 
 * Hover Functionality:
 Hover your mouse over any individual planet name listed on the printed planet cards to reveal an image of that corresponding planet.
 
-![Solar System Hover Functionality Preview](https://raw.githubusercontent.com/ConnorSullivan10/solar-system/master/screenshots/solarSystemHoverFuncScreenshot.PNG)
+![Solar System Hover Functionality Preview](https://raw.githubusercontent.com/ConnorSullivan10/solar-system/master/screenshots/solarSystemHoverScreenshot.PNG)
 
 * Click Functionality:
 Whenever you click on an individual planet card, a larger version of that planet card will appear with more details and a description about the planet you selected. Once you decide to move onto another planet, just click the red "X" button in the top right corner of the large Planet card to close it, and go back to the main website where you can view all the planet options again.
