@@ -28,7 +28,4 @@ If you'd like to search for a planet based on either it's name or any of the det
 
 
 ## How to run
-1. Clone down this project.
-2. Go to: `https://www.npmjs.com/package/http-server` and install "http-server".  
-2. Navigate to the project folder in command line interface and type: `http-server -p 8888`  
-3. This will show at: `http://localhost:8888` in your internet browser.  
+In your browser, navigate to the deployed project link: https://solar-system-63bf6.firebaseapp.com/.
